@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/manhinhchao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:text="admin"
+        android:textColorHint="#6AA36D"
+        android:background="@drawable/custom_edittext"
+        android:textSize="24sp"
+        android:id="@+id/edt_userName"
+        android:hint="Tên Đăng Nhập"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:text="admin"
+        android:inputType="textPassword"
+        android:textColorHint="#6AA36D"
+        android:background="@drawable/custom_edittext"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/edt_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Mật Khẩu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userName" />
+
+    <CheckBox
+        android:textColor="#6E6C5D"
+        android:textSize="18dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cbk_rememberPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhớ Mật Khẩu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_passWord" />
+
+    <Button
+        android:backgroundTint="#D2F3D4"
+        android:layout_marginTop="16dp"
+        android:id="@+id/btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Đăng Nhập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbk_rememberPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
